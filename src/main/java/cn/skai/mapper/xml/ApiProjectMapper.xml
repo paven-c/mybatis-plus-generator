@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.skai.mapper.ApiProjectMapper">
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+            id, user_id, project_id, project_type, status, current_task, final_response, project_start, project_end, create_at, update_at
+    </sql>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.skai.entity.ApiProject">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="project_id" property="projectId"/>
+            <result column="project_type" property="projectType"/>
+            <result column="status" property="status"/>
+            <result column="current_task" property="currentTask"/>
+            <result column="final_response" property="finalResponse"/>
+            <result column="project_start" property="projectStart"/>
+            <result column="project_end" property="projectEnd"/>
+            <result column="create_at" property="createAt"/>
+            <result column="update_at" property="updateAt"/>
+    </resultMap>
+
+
+
+</mapper>

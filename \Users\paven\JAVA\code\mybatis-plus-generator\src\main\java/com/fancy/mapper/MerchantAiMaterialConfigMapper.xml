@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fancy.mapper.MerchantAiMaterialConfigMapper">
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+            id, merchant_id, type, model, races, age_groups, hair_styles, face_decorations, backgrouds, create_time, update_time
+    </sql>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fancy.entity.MerchantAiMaterialConfig">
+            <id column="id" property="id"/>
+            <result column="merchant_id" property="merchantId"/>
+            <result column="type" property="type"/>
+            <result column="model" property="model"/>
+            <result column="races" property="races"/>
+            <result column="age_groups" property="ageGroups"/>
+            <result column="hair_styles" property="hairStyles"/>
+            <result column="face_decorations" property="faceDecorations"/>
+            <result column="backgrouds" property="backgrouds"/>
+            <result column="create_time" property="createTime"/>
+            <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+
+
+</mapper>

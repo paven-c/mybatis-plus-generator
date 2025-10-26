@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aaa.mapper.CreationConfigMapper">
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+            id, user_id, creation_id, img_num, ratio, clothe_type, face_url, gender, race, age_range, background, create_time, update_time
+    </sql>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="aaa.entity.CreationConfig">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="creation_id" property="creationId"/>
+            <result column="img_num" property="imgNum"/>
+            <result column="ratio" property="ratio"/>
+            <result column="clothe_type" property="clotheType"/>
+            <result column="face_url" property="faceUrl"/>
+            <result column="gender" property="gender"/>
+            <result column="race" property="race"/>
+            <result column="age_range" property="ageRange"/>
+            <result column="background" property="background"/>
+            <result column="create_time" property="createTime"/>
+            <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+
+
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fancy.mapper.PayOrderMapper">
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+            id, channel_code, plan_name, body, notify_url, price, channel_fee_rate, channel_fee_price, status, user_ip, expire_time, success_time, notify_time, order_no, refund_price, channel_user_id, channel_order_no, create_user_id, create_time, update_user_id, update_time, deleted, create_timestamp, update_timestamp
+    </sql>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fancy.entity.PayOrder">
+            <id column="id" property="id"/>
+            <result column="channel_code" property="channelCode"/>
+            <result column="plan_name" property="planName"/>
+            <result column="body" property="body"/>
+            <result column="notify_url" property="notifyUrl"/>
+            <result column="price" property="price"/>
+            <result column="channel_fee_rate" property="channelFeeRate"/>
+            <result column="channel_fee_price" property="channelFeePrice"/>
+            <result column="status" property="status"/>
+            <result column="user_ip" property="userIp"/>
+            <result column="expire_time" property="expireTime"/>
+            <result column="success_time" property="successTime"/>
+            <result column="notify_time" property="notifyTime"/>
+            <result column="order_no" property="orderNo"/>
+            <result column="refund_price" property="refundPrice"/>
+            <result column="channel_user_id" property="channelUserId"/>
+            <result column="channel_order_no" property="channelOrderNo"/>
+            <result column="create_user_id" property="createUserId"/>
+            <result column="create_time" property="createTime"/>
+            <result column="update_user_id" property="updateUserId"/>
+            <result column="update_time" property="updateTime"/>
+            <result column="deleted" property="deleted"/>
+            <result column="create_timestamp" property="createTimestamp"/>
+            <result column="update_timestamp" property="updateTimestamp"/>
+    </resultMap>
+
+
+
+</mapper>

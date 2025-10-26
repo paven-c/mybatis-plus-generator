@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fancy.mapper.SpMarkingTaskRecordMapper">
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+            id, merchant_id, merchant_name, marking_task_id, material_id, fancy_item_id, operator_id, operator_name, operate_time, operate_content, create_time, update_time, deleted
+    </sql>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fancy.entity.SpMarkingTaskRecord">
+            <id column="id" property="id"/>
+            <result column="merchant_id" property="merchantId"/>
+            <result column="merchant_name" property="merchantName"/>
+            <result column="marking_task_id" property="markingTaskId"/>
+            <result column="material_id" property="materialId"/>
+            <result column="fancy_item_id" property="fancyItemId"/>
+            <result column="operator_id" property="operatorId"/>
+            <result column="operator_name" property="operatorName"/>
+            <result column="operate_time" property="operateTime"/>
+            <result column="operate_content" property="operateContent"/>
+            <result column="create_time" property="createTime"/>
+            <result column="update_time" property="updateTime"/>
+            <result column="deleted" property="deleted"/>
+    </resultMap>
+
+
+
+</mapper>
